@@ -1,0 +1,16 @@
+--- 
+os: windows
+version: 0.0
+files: 
+  - 
+    destination: "C:\\Job\\"
+    source: \
+hooks: 
+  ApplicationStart: 
+    - 
+      location: hooks\application_start.bat
+      timeout: 900
+  ApplicationStop: 
+    - 
+      location: hooks\application_stop.bat
+      timeout: 900
